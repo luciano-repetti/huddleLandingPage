@@ -9,7 +9,7 @@
 
 header{
     width: 100%;
-    height: 125px;
+    height: 115px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,6 +31,15 @@ header{
 
 .imagenRepresentativa{
     width: 100%;
+}
+
+.bg-section{
+    display: block;
+    width: 100%;
+}
+
+.bg-section.mobile{
+    display: none;
 }
 
 header .free-trial{
@@ -175,36 +184,6 @@ header .free-trial a:hover{
     padding-bottom: 100px;
 }
 
-.bg-section.top-desktop1{
-    background-image: url(/res/bg-section-top-desktop-1.svg);
-    width: 100%;
-    height: 165px;
-}
-
-.bg-section.bottom-desktop1{
-    background-image: url(/res/bg-section-bottom-desktop-1.svg);
-    width: 100%;
-    height: 139px;
-}
-
-.bg-section.top-desktop2{
-    background-image: url(/res/bg-section-top-desktop-2.svg);
-    height: 156px;
-    width: 100%;
-}
-
-.bg-section.bottom-desktop2{
-    background-image: url(/res/bg-section-bottom-desktop-2.svg);
-    height: 139px;
-    width: 100%;
-}
-
-.bg-section.footer-desktop{
-    background-image: url(/res/bg-footer-top-desktop.svg);
-    width: 100%;
-    height: 158px;
-}
-
 footer{
     padding: 80px 0;
     background-color: hsl(192, 100%, 9%);
@@ -314,7 +293,7 @@ footer .newsletter input[type="button"]{
         font-size: 13px;
         padding: 5px 15px;
         border-radius: 18px;
-        margin-right: 0;
+        margin-right: 10px;
     }
 
     header .free-trial{
@@ -407,43 +386,17 @@ footer .newsletter input[type="button"]{
     footer .newsletter input[type="button"]{
         margin-left: 0;
     }
+}
 
 
+@media screen and (max-width: 480px){
 
-
-    .bg-section.top-desktop1{
-        background-image: url(/res/bg-section-top-mobile-1.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 110px;
+    .bg-section{
+        display: none;
     }
     
-    .bg-section.bottom-desktop1{
-        background-image: url(/res/bg-section-bottom-mobile-1.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 110px;
-    }
-    
-    .bg-section.top-desktop2{
-        background-image: url(/res/bg-section-top-mobile-2.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 100px;
-    }
-    
-    .bg-section.bottom-desktop2{
-        background-image: url(/res/bg-section-bottom-mobile-2.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 110px;
-    }
-    
-    .bg-section.footer-desktop{
-        background-image: url(/res/bg-footer-top-mobile.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        height: 50px;
+    .bg-section.mobile{
+        display: block;
     }
 }
 
