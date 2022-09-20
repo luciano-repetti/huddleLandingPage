@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo-i{
+    margin-left: 40px;
+    background-image: url(/res/logo.svg);
+    width: 200px;
+    height: 40px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+header .free-trial{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .free-trial a{
+    margin-right: 40px;
+    font-size: 20px;
+    color: hsl(322, 100%, 66%);
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid hsl(322, 100%, 66%);
+    box-shadow: 1px 1px 5px hsl(322, 100%, 66%);
+}
+
+header .free-trial a:hover{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+.info{
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.info .text-prin{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    width: 45%;
+    text-align: center;
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 35px;
+}
+
+.info a{
+    color: hsl(207, 100%, 98%);
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px 75px;
+    border-radius: 35px;
+    background-color: hsl(322, 100%, 66%);
+    margin-bottom: 60px;
+}
+
+.info .comunidad{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info .comunidad .contenedor-cm{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info .comunidad .contenedor-cm .icon{
+    width: 47px;
+    height: 41px;
+}
+
+.info .comunidad .contenedor-cm h2{
+    font-size: 100px;
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info .comunidad .contenedor-cm .text-com{
+    font-size: 23px;
+    color: hsl(192, 100%, 9%, .6);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+
+.block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.blue-light{
+    background-color: hsl(207, 100%, 98%);
+}
+
+.block .block-info{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block .block-info h3{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+
+.block .block-info p{
+    max-width: 450px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: hsl(192, 100%, 9%, .9);
+}
+
+.block .ilustracion.left{
+    width: 50%;
+    text-align: left;
+}
+
+.block .ilustracion.right{
+    width: 50%;
+    text-align: right;
+}
+
+.espacio-top{
+    padding-top: 100px;
+}
+
+.espacio-bottom{
+    padding-bottom: 100px;
+}
+
+.bg-section.top-desktop1{
+    background-image: url(/res/bg-section-top-desktop-1.svg);
+    width: 100%;
+    height: 165px;
+}
+
+.bg-section.bottom-desktop1{
+    background-image: url(/res/bg-section-bottom-desktop-1.svg);
+    width: 100%;
+    height: 139px;
+}
+
+.bg-section.top-desktop2{
+    background-image: url(/res/bg-section-top-desktop-2.svg);
+    height: 156px;
+    width: 100%;
+}
+
+.bg-section.bottom-desktop2{
+    background-image: url(/res/bg-section-bottom-desktop-2.svg);
+    height: 139px;
+    width: 100%;
+}
+
+.bg-section.footer-desktop{
+    background-image: url(/res/bg-footer-top-desktop.svg);
+    width: 100%;
+    height: 158px;
+}
+
+footer{
+    padding: 80px 0;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    width: 100%;
+}
+
+footer .contacto{
+    width: 50%;
+    display: flex;
+    padding-left: 120px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* brightness 0 oscurece la imagen y invert invierte la oscuridad */
+footer .contacto .logo .img-logo{
+    filter: brightness(0) invert(1);
+    width: 200px;
+}
+
+footer .contacto .letter-contacto{
+    margin-top: 30px;
+    max-width: 320px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+footer .contacto .contact{
+    display: flex;
+    margin-top: 30px;
+}
+
+footer .contacto .contact p{
+    color: #fff;
+    margin-left: 25px;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 16px;
+}
+
+footer .contacto .redes{
+    display: flex;
+    margin-top: 100px;
+}
+
+footer .contacto .redes .red-social{
+    width: 35px;
+    margin-right: 40px;
+    filter: brightness(0) invert(1);
+}
+
+footer .contacto .redes .red-social:hover{
+    filter: invert(49%) sepia(92%) saturate(4378%) hue-rotate(194deg) brightness(94%) contrast(101%);
+}
+
+footer .newsletter{
+    width: 50%;
+    display: flex;
+    padding-left: 120px;
+    flex-direction: column;
+}
+
+footer .newsletter .letter-newsletter{
+    font-size: 30px;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 600;
+    color: #fff;
+}
+
+footer .info-newsletter{
+    margin-top: 30px;
+    max-width: 400px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+footer .newsletter input[type="email"]{
+    padding: 12px 50px;
+    border-radius: 5px;
+}
+
+footer .newsletter input[type="button"]{
+    padding: 10px 35px;
+    color: #fff;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 30px;
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 5px;
+    background-color: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+
+
+
